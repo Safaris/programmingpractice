@@ -1,9 +1,7 @@
 #solution to problem found at http://www.reddit.com/r/dailyprogrammer/comments/29i9jw/6302014_challenge_169_easy_90_degree_2d_array/
 #By Sean Safari
 def rotate(n):
-    n2=[[row[(i)] for row in n] for i in range(len(n))]
-    for row in n2:
-        row.reverse()
+    n2=[[row[(i)] for row in reversed(n)] for i in range(len(n))]
     return n2
 
 #matrix=[[1,2,3],[4,5,6],[7,8,9]]
